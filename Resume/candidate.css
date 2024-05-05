@@ -1,0 +1,185 @@
+.selection-choice-area {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.selection-area-buttons {
+    width: 200px
+}
+
+.candidate-search {
+    max-width: 400px;
+    width: 22%;
+    margin: 8px 10px;
+}
+
+.resume-container {
+    width: 90%;
+    display: none;
+    margin-top: 50px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px #888888;
+}
+
+.resume-header {
+    background-color: rgb(191, 235, 236);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 180px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+
+.header-center {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.candidate-image {
+    width: 230px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.position {
+    font-weight: bold;
+    bottom: 25px;
+    position: absolute;
+}
+
+.resume-body {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basics {
+    width: 15%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.other-details {
+    width: 67%;
+    padding: 10px 10px 10px 0px;
+}
+
+p,
+h2
+ {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.work-ex {
+    margin-top: 0px;
+}
+
+.basics {
+    text-align: right;
+    background: rgb(245, 183, 177);
+    height: fit-content;
+}
+
+.basics .titles {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: grey;
+    text-align: left;
+    padding: 5px;
+}
+
+.innerDetail {
+    padding: 10px 0px 10px 40px
+}
+
+.no-result {
+    display: none;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-top: 100px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px #4d39a3;
+}
+
+.candidate-information {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.no-result-image {
+    width: 100px;
+    height: 100px;
+    padding-right: 40px;
+}
+
+.no-result-text {
+    font-size: 30px;
+}
+
+.personal-info,
+.tech-skills,
+.hobbies {
+    margin-bottom: 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.resumeInfo {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #73d1dd;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #0789a0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px #888888;
+    border-radius: 80px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

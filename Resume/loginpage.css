@@ -1,0 +1,74 @@
+
+body {
+    margin: 0%;
+    background-color: grey;
+
+}
+
+
+input {
+    width: 300px;
+    min-width: 120px;
+    padding: 10px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    border: none;
+    border: 2px solid black;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+    color: black;
+    background-color: rgba(92, 154, 205, 0.35);
+}
+
+.checkbutton {
+    padding-left: 85px;
+    padding-top: 20px;
+}
+
+#button {
+    background-color: rgb(116, 243, 102);
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-width: 2px;
+    text-align: center;
+    position: relative;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.login {
+
+    background-color: yellow;
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgb(14, 14, 14);
+}
+
+
+#password {
+    padding-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+}
+
+#invalid-scenario {
+    color: red;
+    display: none;
+    padding-top: 20px;
+    margin-bottom: -20px;
+}

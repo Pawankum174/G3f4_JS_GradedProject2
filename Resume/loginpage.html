@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<link rel="stylesheet" href="loginpage.css">
+</head>
+
+<body>
+    <div class="login">
+        <div>
+            <label>
+                <input placeholder="User Name" id="user-entered-value" />
+            </label>
+        </div>
+        <div id="password">
+            <label>
+                <input placeholder="Password" type="password" id="password-entered" />
+            </label>
+        </div>
+        <div>
+            <p id="invalid-scenario">
+                invalid username/password
+            </p>
+        </div>
+
+        <div class="checkbutton">
+            <button id="button" onclick="validateCredentials()">
+                Login
+            </button>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="loginpage.js"></script>
+
+</body>
+
+</html>

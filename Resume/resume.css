@@ -1,0 +1,130 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .resume-container {
+    margin: 20px;
+    box-shadow: 0 0 10px;
+  }
+  
+  #name {
+    font-size: 30px;
+  }
+  
+  .resume-header {
+    text-align: center;
+    background-color: rgb(209, 246, 240);
+  }
+  
+  .profile-picture {
+    position: absolute;
+    right: 200px;
+    top: 96px;
+  }
+  
+  #name {
+    padding-top: 50px;
+    margin: 0;
+  }
+  
+  #mobile-number {
+    text-align: right;
+  }
+  
+  #email {
+    text-align: right;
+  }
+  
+  #linkedin {
+    text-align: right;
+  }
+  
+  #tech-skills {
+    text-align: right;
+  }
+  
+  #hobbies {
+    text-align: right;
+  }
+  
+  .appliedFor {
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+  
+  .resume-columns {
+    padding: 20px;
+    display: grid;
+    padding: 10px;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 5fr;
+  }
+  
+  .col-1 {
+    height: max-content;
+    background-color: rgb(248, 226, 226);
+    margin-top: 23px;
+    padding: 10px;
+  }
+  
+  .col-1-heading {
+    background-color: #a9a9a9;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+  }
+  
+  .col-2-heading {
+    font-weight: 1600;
+    font-size: 30px;
+  }
+  
+  .info {
+    margin-left: 30px;
+  }
+  
+  #search-result-area {
+    text-align: center;
+  }
+  
+  #search-results {
+    list-style-type: none;
+  }
+  
+  .search-bar-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1% 1%;
+  }
+  
+  #searchbar {
+    width: 400px;
+  }
+  
+  .resume-container {
+    border: 2px solid black;
+  }
+  
+  .resume-display-area {
+    display: inline;
+  }
+  
+  #prev-btn,#next-btn {
+    background-color: rgb(73, 53, 232);
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-width: 2px;
+    text-align: center;
+    position: relative;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+
+}

@@ -8,7 +8,7 @@ function validateCredentials() {
 
     function checkAndMatch() {
         if (username === 'Pawan' && password === 'gl@g3f4') {
-            window.location = 'candidate.html';
+            window.location = 'resume.html';
         } else {
             document.getElementById('user-entered-value').value = ''
             document.getElementById('password-entered').value = '';

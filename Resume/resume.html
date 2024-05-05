@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Search</title>
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+  <body>
+    <!-- Search bar area for filtering resumes -->
+    <div class="search-bar-area">
+      <button id="prev-btn" onclick="handlePrev()">Prev</button>
+      <!-- Search input field -->
+      <label>
+        <input
+          type="search"
+          id="searchbar"
+          oninput="updateAfterSearch()"
+          placeholder="Search for keywords to filter the results"
+        />
+      </label>
+      <button id="next-btn" onclick="handleNext()">Next</button>
+    </div>
+    <!-- Area to display search results -->
+    <div id="search-result-area">
+      <ul id="search-results"></ul>
+    </div>
+    <!-- Container for displaying resume details -->
+    <div class="resume-container">
+      <div id="resume-display-area">
+        <div class="resume-header">
+          <h2 id="name"></h2>
+          <!-- Applied for position -->
+          <div class="appliedFor">
+            Applied For: <span id="appliedFor"></span>
+          </div>
+          <!-- Profile picture of the candidate -->
+          <div class="profile-picture">
+            <img src="./profile.JPG" height="150" alt="someIMG" />
+          </div>
+        </div>
+        <div class="resume-columns">
+          <div class="col-1">
+            <section class="resume-body">
+              <!-- Mobile number, email, and LinkedIn information -->
+              <h3 class="col-1-heading">Personal Information</h3>
+              <div id="mobile-number"></div>
+              <div id="email"></div>
+              <div id="linkedin"></div>
+            </section>
+            <section class="resume-body">
+              <h3 class="col-1-heading">Technical Skills</h3>
+              <!-- List of technical skills -->
+              <div id="tech-skills"></div>
+            </section>
+            <section class="resume-body">
+              <h3 class="col-1-heading">Hobbies</h3>
+              <!-- List of hobbies or interests -->
+              <div id="hobbies"></div>
+            </section>
+          </div>
+          <div>
+            <section class="resume-body">
+              <h3 class="col-2-heading">Work Experience in previous company</h3>
+              <div class="info">
+                <!-- Details about previous work experience -->
+                <p><b>Company Name:</b> <span id="prev-company-name"></span></p>
+                <p>
+                  <b> Position:</b> <span id="prev-company-position"></span>
+                </p>
+                <p>
+                  <b> Start Date:</b> <span id="prev-company-start-date"></span>
+                </p>
+                <p>
+                  <b> End Date:</b> <span id="prev-company-end-date"></span>
+                </p>
+                <p><b> Summary:</b> <span id="prev-company-summary"></span></p>
+              </div>
+            </section>
+            <section class="resume-body">
+              <!-- Details about projects the candidate has worked on -->
+              <h3 class="col-2-heading">Projects</h3>
+              <div id="project-details" class="info"></div>
+            </section>
+            <section class="resume-body">
+              <h3 class="col-2-heading">Education</h3>
+              <ul id="education-details">
+                <!-- Educational background, including UG, senior secondary, and high school -->
+                <li>
+                  <p><b>UG: </b> <span id="ug"></span></p>
+                </li>
+                <li>
+                  <p>
+                    <b>Senior Secondary: </b>
+                    <span id="senior-secondary"></span>
+                  </p>
+                </li>
+                <li>
+                  <p><b>High School: </b> <span id="high-school"></span></p>
+                </li>
+              </ul>
+            </section>
+            <section class="resume-body">
+              <h3 class="col-2-heading">Internship</h3>
+              <!-- Details about internships, including company, position, start and end dates, and summary -->
+              <ul>
+                <li>
+                  <b> Company Name:</b> <span id="internship-name"></span>
+                </li>
+                <li>
+                  <b> Position:</b> <span id="internship-position"></span>
+                </li>
+                <li>
+                  <b> Start Date:</b> <span id="internship-start-date"></span>
+                </li>
+                <li>
+                  <b> End Date:</b> <span id="internship-end-date"></span>
+                </li>
+                <li><b> Summary:</b> <span id="internship-summary"></span></li>
+              </ul>
+            </section>
+            <section class="resume-body">
+              <h3 class="col-2-heading">Achievements</h3>
+              <!-- List of achievements or awards received -->
+              <ul id="achievements"></ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Included JavaScript files for functionality -->
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="Resumes.js"></script>
+  </body>
+</html>
